@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Options</title>
+    <style type="text/css">
+        body {
+            padding: 5px;
+            overflow: hidden;
+        }
+        #saveDisplay {
+            font-style: italic;
+            padding: 1px 10px 1px 1px;
+            display: inline-block;
+            position: relative;
+            float: right;
+        }
+        label {
+            padding-left: 10px;
+        }
+        #saveButton {
+            float: right;
+        }
+        .bold {
+            font-weight: 900;
+            padding-left: 0.5em;
+        }
+        td {
+            padding: 0em 3em 0em 1em;
+            vertical-align: text-top;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+<tr>
+<td>
+    <span class='bold'>Theme:</span><br />
+    <label><input id='darkTheme' type='radio' name='theme' checked> Dark</label><br />
+    <label><input id='lightTheme' type='radio' name='theme'> Light</label><br />
+</td>
+<td>
+    <span class='bold'>Font Size:</span><br />
+    <label><input id='smallFont' type='radio' name='size'> Small</label><br />
+    <label><input id='mediumFont' type='radio' name='size' checked> Medium</label><br />
+    <label><input id='largeFont' type='radio' name='size'> Large</label><br />
+</td>
+<td>
+    <span class='bold'>Location:</span><br />
+    <label><input id='topLoc' type='radio' name='location' checked> Top</label><br />
+    <label><input id='bottomLoc' type='radio' name='location'> Bottom</label><br />
+</td>
+</tr>
+</table>
+<br />
+<button id='resetButton'>Reset</button>
+<button id='saveButton'>Save</button>
+
+<div id='saveDisplay'></div>
+
+<script src='options.js'></script>
+
+</body>
+</html>

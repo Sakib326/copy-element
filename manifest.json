@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Copy Class",
+  "description": "This extension shows information about HTML elements on a web page when you hover over them.",
+  "version": "1.0",
+  "short_name": "Show & Copy HTML tag names, IDs & classes for a web page",
+  "author": "freginold",
+
+  "icons": {
+    "16": "copyClass16.png",
+    "48": "copyClass48.png",
+    "128": "copyClass128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "copyClass19.png",
+      "38": "copyClass38.png"
+    },
+    "default_title": "copyClass"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "permissions": ["activeTab", "storage"]
+}
