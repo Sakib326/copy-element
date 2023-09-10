@@ -146,20 +146,6 @@ function elemShow() {
   wrapperDiv.insertBefore(newDiv[numDivs], wrapperDiv.firstChild);
   makeBigger(0);
   // try this: newDiv[numDivs].scrollIntoView();
-
-  // add click event listener
-  newDiv[numDivs].addEventListener("click", copyIDandClass);
-}
-
-function copyIDandClass() {
-  console.log("test");
-  // get the ID and class of the element
-  var id = this.id;
-  var classVal = this.className;
-
-  // copy the ID and class to the clipboard
-  var copyText = id + "\n" + classVal;
-  navigator.clipboard.writeText(copyText);
 }
 
 function elemRem() {
@@ -210,10 +196,6 @@ function addClickListeners() {
     elems[i].addEventListener("contextmenu", elemShowOnClick);
   }
 }
-
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
 
 function elemShowOnClick(event) {
   // This function will now trigger when an element is clicked
